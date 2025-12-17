@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Open AI Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Our Open AI Testing Project</h1>
+    </header>
+
+    <div class="main-content">
+        <div class="sphere-container">
+            <div class="sphere" id="particleSphere"></div>
+            <div class="energy-particle particle-1"></div>
+            <div class="energy-particle particle-2"></div>
+            <div class="energy-particle particle-3"></div>
+            <div class="energy-particle particle-4"></div>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Team<br>Members</h3>
+                <button class="card-btn btn-orange" onclick="openModal('team')">👥</button>
+            </div>
+
+            <div class="card">
+                <h3>About<br>Project</h3>
+                <button class="card-btn btn-orange" onclick="openModal('about')">ℹ️</button>
+            </div>
+
+            <div class="card">
+                <h3>Key Focus<br>Areas</h3>
+                <button class="card-btn btn-purple" onclick="openModal('focus')">🔑</button>
+            </div>
+
+            <div class="card">
+                <h3>Other<br>Projects</h3>
+                <button class="card-btn btn-orange" onclick="openModal('projects')">🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Modal -->
+<div id="teamModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('team')">×</button>
+        <h2 class="modal-title">Our Team</h2>
+        
+        <!-- Project Leadership -->
+        <h3 class="team-section-title">👨‍💼 Project Leadership</h3>
+        <div class="team-grid leadership-grid">
+            <div class="team-card">
+                <img src="https://github.com/SergioUS.png" alt="Sergey Efremov" class="team-photo">
+                <div class="team-name">Sergey Efremov</div>
+                <div class="team-role">Project Manager</div>
+                <div class="team-links">
+                    <a href="https://github.com/SergioUS" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sefremoff/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://serinegit.github.io/Blue-Origin-and-X-AI-project-page/img/team/Tatsiana.jpg" alt="Tatsiana Lentz" class="team-photo">
+                <div class="team-name">Tatsiana Lentz</div>
+                <div class="team-role">Team Lead</div>
+                <div class="team-links">
+                    <a href="https://github.com/TatsianaLentz" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tatsianalentz/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://github.com/SerineGit.png" alt="Serine Zargaryan" class="team-photo">
+                <div class="team-name">Serine Zargaryan</div>
+                <div class="team-role">Tech Lead</div>
+                <div class="team-links">
+                    <a href="https://github.com/SerineGit" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/serinezargaryan/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- QA Engineering Squad -->
+        <h3 class="team-section-title">🔬 QA Engineering Squad</h3>
+        <div class="team-grid qa-grid">
+            <div class="team-card">
+                <img src="https://github.com/abuyanovski.png" alt="Anton Buyanovski" class="team-photo">
+                <div class="team-name">Anton Buyanovski</div>
+                <div class="team-role">QA Engineer</div>
+                <div class="team-links">
+                    <a href="https://github.com/abuyanovski" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/antonb-qa/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://ca.slack-edge.com/TJNJLDTGW-U046H7FMFDH-22edc534c346-512" alt="Alexander Kulik" class="team-photo">
+                <div class="team-name">Alexander Kulik</div>
+                <div class="team-role">QA Engineer</div>
+                <div class="team-links">
+                    <a href="#" target="_blank" class="team-link disabled">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" class="team-link disabled">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://github.com/elenaotrosnova.png" alt="Elena Otrosnova" class="team-photo">
+                <div class="team-name">Elena Otrosnova</div>
+                <div class="team-role">QA Engineer</div>
+                <div class="team-links">
+                    <a href="https://github.com/elenaotrosnova" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/elena-otrosnova/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQH8n0d765_vew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1697497690550?e=1766620800&v=beta&t=Y33-cJbHFhOPvjR0kwQCBW6qKlfJnkIIPLqJ4BV-TuA" alt="Lana Chovhan" class="team-photo">
+                <div class="team-name">Lana Chovhan</div>
+                <div class="team-role">QA Engineer</div>
+                <div class="team-links">
+                    <a href="https://github.com/LanSvet" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lana-chovgan/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://avatars.githubusercontent.com/u/228629286?v=4" alt="Ludmila Sushchuk" class="team-photo">
+                <div class="team-name">Ludmila Sushchuk</div>
+                <div class="team-role">QA Engineer</div>
+                <div class="team-links">
+                    <a href="https://github.com/aaaa8a9" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sushmila/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQE5U1qYmG8tbg/profile-displayphoto-crop_800_800/B4DZmDzFQ2GwAI-/0/1758852830716?e=1766620800&v=beta&t=fnzsdejNmfo_8dhocSyBU4aAp1xcj-5Yyctqi93Tw8g" alt="Tigran Nikoghosyan" class="team-photo">
+                <div class="team-name">Tigran Nikoghosyan</div>
+                <div class="team-role">QA Engineer</div>
+                <div class="team-links">
+                    <a href="https://github.com/Tikgithub9" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tigran-nikoghosyan/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <img src="https://github.com/1vpfcb.png" alt="Viktor Pervushkin" class="team-photo">
+                <div class="team-name">Viktor Pervushkin</div>
+                <div class="team-role">QA Engineer</div>
+                <div class="team-links">
+                    <a href="https://github.com/1vpfcb" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/viktp/" target="_blank" class="team-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Modal -->
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('about')">×</button>
+        <h2 class="modal-title">About Our Project</h2>
+        <p style="line-height: 1.8; font-size: 1.1rem;">
+            Our Open AI Testing Project is dedicated to advancing artificial intelligence research and development. 
+            We focus on creating innovative solutions that push the boundaries of what's possible with AI technology. 
+            <br><br>
+            Our team combines cutting-edge research with practical applications to deliver real-world impact. 
+            We believe in open collaboration and transparent development processes.
+            <br><br>
+            Join us on our journey to shape the future of AI technology.
+        </p>
+        
+        <div class="about-buttons">
+            <a href="https://qasv.us/en" target="_blank" class="about-btn btn-primary">
+                <span class="btn-icon">ℹ️</span>
+                <span>About Us</span>
+            </a>
+            <a href="https://qasv.us/en#rec152346063" target="_blank" class="about-btn btn-secondary">
+                <span class="btn-icon">🚀</span>
+                <span>Join Our Team</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+   <!-- Focus Modal -->
+<div id="focusModal" class="modal">
+    <div class="modal-content modal-wide">
+        <button class="modal-close" onclick="closeModal('focus')">×</button>
+        <h2 class="modal-title">End-to-End Testing Framework for ChatGPT Platform</h2>
+        <div class="focus-subtitle">
+            <span class="badge">Website Automation</span>
+            <span class="badge">REST API Testing</span>
+            <span class="badge">Quality Engineering</span>
+        </div>
+
+        <!-- What We Test Section -->
+        <h3 class="focus-section-title">🎯 What We Test</h3>
+        <div class="focus-grid">
+            <div class="focus-item">
+                <div class="focus-icon">🌐</div>
+                <div class="focus-title">ChatGPT Website</div>
+                <ul class="focus-list">
+                    <li>✅ Positive Scenarios</li>
+                    <li>❌ Negative Testing</li>
+                    <li>🧪 Functional Testing</li>
+                    <li>💬 Chat Interactions</li>
+                    <li>📱 Cross-Browser/Device</li>
+                </ul>
+            </div>
+
+            <div class="focus-item">
+                <div class="focus-icon">🔌</div>
+                <div class="focus-title">OpenAI REST API</div>
+                <ul class="focus-list">
+                    <li>🎨 Endpoint Validation</li>
+                    <li>🔒 Authentication & Security</li>
+                    <li>⚠️ Error Handling</li>
+                    <li>⚡ Performance & Load</li>
+                    <li>📊 Rate Limiting</li>
+                </ul>
+            </div>
+
+            <div class="focus-item">
+                <div class="focus-icon">🏗️</div>
+                <div class="focus-title">POM Automation</div>
+                <ul class="focus-list">
+                    <li>📐 Page Object Model</li>
+                    <li>🔄 Reusable Components</li>
+                    <li>🎯 Test Organization</li>
+                    <li>📈 Scalable Architecture</li>
+                    <li>🧩 Modular Design</li>
+                </ul>
+            </div>
+
+            <div class="focus-item">
+                <div class="focus-icon">✨</div>
+                <div class="focus-title">Response Accuracy</div>
+                <ul class="focus-list">
+                    <li>🎯 Output Validation</li>
+                    <li>📊 Data Integrity</li>
+                    <li>⏱️ Response Time</li>
+                    <li>🔍 Content Quality</li>
+                    <li>🎨 Format Verification</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tech Arsenal Section -->
+        <h3 class="focus-section-title">🛠️ Tech Arsenal</h3>
+        <div class="tech-arsenal">
+            <div class="tech-category">
+                <h4 class="tech-category-title">Automation</h4>
+                <ul class="tech-list">
+                    <li>🔧 Selenium WebDriver</li>
+                    <li>🐍 Python + UniTest</li>
+                    <li>📄 Page Object Model</li>
+                </ul>
+            </div>
+
+            <div class="tech-category">
+                <h4 class="tech-category-title">API Testing</h4>
+                <ul class="tech-list">
+                    <li>📮 Postman Collections</li>
+                    <li>⚡ Newman CLI</li>
+                    <li>🔌 REST Assured</li>
+                </ul>
+            </div>
+
+            <div class="tech-category">
+                <h4 class="tech-category-title">Infrastructure</h4>
+                <ul class="tech-list">
+                    <li>🌐 BrowserStack</li>
+                    <li>⚙️ GitHub Actions</li>
+                    <li>📋 Jira + Slack</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Projects Modal -->
+<div id="projectsModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('projects')">×</button>
+        <h2 class="modal-title">Our Testing Projects</h2>
+        <div class="projects-grid">
+            <a href="https://github.com/SergioUS/STARLINK-testing-project" target="_blank" class="project-link">
+                <div class="project-icon">🛰️</div>
+                <div class="project-name">StarLink</div>
+                <div class="project-desc">Satellite Testing</div>
+            </a>
+            
+            <a href="https://github.com/SergioUS/Tesla_testing_project" target="_blank" class="project-link">
+                <div class="project-icon">🚗</div>
+                <div class="project-name">Tesla</div>
+                <div class="project-desc">EV Platform Testing</div>
+            </a>
+            
+            <a href="https://github.com/SergioUS/X-AI-Testing-project" target="_blank" class="project-link">
+                <div class="project-icon">🤖</div>
+                <div class="project-name">X.AI</div>
+                <div class="project-desc">AI Systems Testing</div>
+            </a>
+            
+            <a href="https://github.com/SergioUS/NASA_testing_project" target="_blank" class="project-link">
+                <div class="project-icon">🚀</div>
+                <div class="project-name">NASA</div>
+                <div class="project-desc">Space Tech Testing</div>
+            </a>
+            
+            <a href="https://github.com/SergioUS/Apple-and-X-AI-testing-project" target="_blank" class="project-link">
+                <div class="project-icon">🍎</div>
+                <div class="project-name">Apple & X.AI</div>
+                <div class="project-desc">Integration Testing</div>
+            </a>
+            
+            <a href="https://github.com/SergioUS/Blue-Origin-and-X-AI-testing-project" target="_blank" class="project-link">
+                <div class="project-icon">🌌</div>
+                <div class="project-name">Blue Origin & X.AI</div>
+                <div class="project-desc">Space AI Testing</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2025 Open AI Testing Project. All rights reserved.</p>
+        <p>Design by <a href="https://github.com/SerineGit" target="_blank">StarKi</a></p>
+        <p>Thx for support <a href="https://github.com/LanSvet" target="_blank">Lana</a> & <a href="https://github.com/aaaa8a9" target="_blank">Mila</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

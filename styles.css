@@ -1641,14 +1641,14 @@ footer a:hover {
     }
     
     .sphere-container {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
         margin: -35px auto 0;
     }
     
     .sphere {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
     
     .cards-grid {
@@ -1665,6 +1665,7 @@ footer a:hover {
     .card:nth-child(2),
     .card:nth-child(3),
     .card:nth-child(4) {
+        top: 70%;
         grid-column: 1;
         grid-row: auto;
         border-radius: 12px;
